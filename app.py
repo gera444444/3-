@@ -22,8 +22,8 @@ class Animal(db.Model):
 def create_db():
     with app.app_context():
         db.create_all()
-        # Добавление примеров животных
-        if Animal.query.count() == 0:  # Проверяем, есть ли уже животные в базе
+        
+        if Animal.query.count() == 0:  
             examples = [
                 Animal(name="Leo", species="Lion", age=5),
                 Animal(name="Milo", species="Cat", age=3),
