@@ -12,7 +12,7 @@ app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 # Инициализация базы данных
 db = SQLAlchemy(app)
 
-# Модель автомобиля
+
 class Car(db.Model):
     id = db.Column(db.Integer, primary_key=True)
     make = db.Column(db.String(50), nullable=False)
